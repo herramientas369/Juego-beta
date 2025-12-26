@@ -1,0 +1,33 @@
+:root{
+  --bg:#0b1020;
+  --card:#0f1724;
+  --accent:#ff5c7c;
+  --muted:#9fb0d6;
+  --glass: rgba(255,255,255,0.03);
+  --hud:#0b1220cc;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+*{box-sizing:border-box}
+html,body,#root{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#041028);color:#e6eef8}
+.header{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;background:linear-gradient(90deg, rgba(255,255,255,0.02), transparent);backdrop-filter: blur(4px)}
+.header h1{margin:0;font-size:20px}
+.container{display:flex;height:calc(100% - 60px)}
+.left-panel{width:320px;padding:16px;background:var(--card);border-right:1px solid rgba(255,255,255,0.02);overflow:auto}
+.canvas-wrap{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:12px}
+.hud{position:absolute;left:340px;top:18px;display:flex;gap:12px}
+.panel-section{margin-bottom:14px}
+.selectable{display:flex;flex-wrap:wrap;gap:8px}
+.char-btn{padding:8px 10px;border-radius:8px;border:0;background:var(--glass);color:var(--muted);cursor:pointer}
+.btn{padding:8px 10px;border-radius:8px;border:0;background:linear-gradient(90deg,var(--accent),#4fc1ff);color:#051225;font-weight:700;cursor:pointer}
+.small{font-size:13px;color:var(--muted)}
+.controls{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
+.hud-bar{display:flex;gap:8px;align-items:center}
+.bar{width:220px;height:14px;background:#051224;border-radius:999px;overflow:hidden;margin-right:8px}
+.bar > i{display:block;height:100%}
+.status{display:flex;flex-direction:column;gap:6px;margin-bottom:8px}
+.bottom-row{position:fixed;left:340px;right:12px;bottom:12px;display:flex;justify-content:space-between;align-items:center}
+.touch-controls{display:flex;gap:8px}
+.touch-btn{padding:12px;border-radius:10px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.02);color:var(--muted)}
+.canvas3d{width:100%;height:100%;background:linear-gradient(180deg,#07102a,#051226);border-radius:8px}
+.store-item{display:flex;justify-content:space-between;align-items:center;padding:8px;background:rgba(255,255,255,0.02);border-radius:8px}
+.center{display:flex;align-items:center;justify-content:center}
